@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import FunctionTransfer from './FunctionTransfer'
+import Formvalidation from './Formvalidation'
+
 
 function App() {
+
+  function SendData()
+  {
+    alert("Function Transfered Successfully.");
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+      {/* <Formvalidation></Formvalidation> */}
+      <FunctionTransfer data={SendData}></FunctionTransfer>
     </div>
   );
 }
