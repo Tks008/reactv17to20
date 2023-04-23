@@ -52,7 +52,7 @@ export default function Formvalidation()
         <input type="text" placeholder="Enter the password"onChange={Passvalidation}></input>
         {PassErr?<span>Invalid Password</span>:""}
         <br></br>
-        <button type="submit">Save</button>
+        <button type="submit">Submit</button>
         </form>
       </div>
     );
